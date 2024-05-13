@@ -3,6 +3,7 @@ import os
 from io import BytesIO
 from queue import Queue
 import requests
+from werkzeug.urls import url_quote
 from flask import Flask, request
 from telegram import Bot, Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import CommandHandler, MessageHandler, Filters, CallbackQueryHandler, Dispatcher
